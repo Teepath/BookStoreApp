@@ -1,0 +1,19 @@
+{>"layouts/master" /}
+
+{<body}
+    {#books}
+        <div class="large-4 cell">
+
+        <h4> {.title} </h4>
+        <img src="/img/{.cover}" />
+        <p>{.description}</p>
+        <div> You can order for it at <span>{.price} </span> </div>
+        <br>
+        <p> {.author} </p>
+        <a href="/books/details/{._id}" class="button small">Book details.. </a>
+
+        </div>
+    {/books}
+
+
+{/body}

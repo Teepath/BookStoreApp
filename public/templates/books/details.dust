@@ -1,0 +1,31 @@
+{>"layouts/master" /}
+
+    {<body}
+            <div class='grid-x'>
+            <div class="large-4 cell">
+                <img src="/img/{book.cover}" />
+            </div>
+                <div class="large-8 cell">
+                    <h2> {book.title} </h2>
+                    <ul class="bookInfo">
+                        <li> Category: {book.category}</li>
+                        <li> Author: {book.author} </li>
+                        <li> Publisher: {book.publisher} </li>
+                    </ul>
+                    <br>
+                    <div class='price'><span> {book.price}</span></div>
+                    <p>{book.description} </p>
+                    <form method="post" action="/cart/{.book._id}" >
+                        <input type="submit" class="button success" value="add To Cart">
+                        <input type="hidden" value="{._csrf}" name="_csrf" />
+
+
+                    </form>
+
+
+                </div>
+
+            </div>
+
+    {/body}
+

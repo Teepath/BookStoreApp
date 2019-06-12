@@ -1,0 +1,75 @@
+{>"layouts/manage"/}
+
+{<body}
+    <div class="grid-x">
+        <div class="large-12 cell">
+            <h2> Add Book </h2>
+            <form method="post" action="/manage/books" >
+                <div class="grid-x">
+                    <div class="large-12 cell">
+                        <label> Title
+                            <input name="title" type="text" />
+                        </label>
+                    </div>
+                </div>
+                <div class="grid-x">
+                    <div class="large-12 cell">
+                        <label> Author
+                            <input name="author" type="text" />
+                        </label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="large-12 cell">
+                        <label> Publisher
+                            <input name="publisher" type="text" />
+                        </label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="large-12 cell">
+                        <label> Price
+                            <input name="price" type="text" />
+                        </label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="large-12 cell">
+                        <label> Category
+
+                            <select name="category">
+
+                            {#categories}
+                                <option value="{.name}"> {.name} </option>
+                            {/categories}
+                            </select>
+
+                    </div>
+                </div>
+
+                <div class="grid-x">
+                    <div class="large-12 cell">
+                        <label> Description
+                            <textarea name="description">
+                            </textarea>
+                        </label>
+                    </div>
+                </div>
+                <div class="grid-x">
+                    <div class="large-12 cell">
+                        <label> ImageUrl
+                        <input name="cover" type="text" />
+                        </label>
+                    </div>
+                </div>
+
+                <div class="grid-x">
+                    <div class="large-12 cell">
+                        <input name="submit" type="submit" value="submit"/>
+                    </div>
+                </div>
+                <input type="hidden" name="_csrf" value="{_csrf}"/>
+            </form>
+        </div>
+    </div>
+{/body}

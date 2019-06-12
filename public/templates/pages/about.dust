@@ -1,0 +1,13 @@
+{>"layouts/master"/}
+    {<title}
+        About Page
+    {/title}
+
+    {<body}
+        <div class="grid-x">
+            <div class="large-12 cell" >
+                <p> We are inspire to aspire to change and advance the economics of reading... </p>
+            </div>
+        </div>
+
+    {/body}
