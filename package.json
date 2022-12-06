@@ -20,7 +20,7 @@
         "dustjs-linkedin": "~2.6.3",
         "engine-munger": "^0.2.9",
         "eslint": "^1.10.3",
-        "express": "^4.12.2",
+        "express": "^4.18.2",
         "express-messages": "^1.0.1",
         "kraken-js": "^2.0.0",
         "localizr": "^0.1.6",
@@ -42,6 +42,6 @@
         "grunt-localizr": "^0.2.4",
         "grunt-mocha-cli": "^1.14.0",
         "mocha": "^1.18.0",
-        "supertest": "^0.9.0"
+        "supertest": "^6.3.2"
     }
 }
